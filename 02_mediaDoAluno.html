@@ -7,11 +7,14 @@
     */
 
     //ENTRADA
-
-
+    const notas = parseInt(prompt("Quantas notas o aluno obteve ?"))
+    let totalNotas = 0;
     //PROCESSAMENTO
-
-
+for( let contador = 1; contador <= notas; contador++){
+    const professor = parseInt(prompt(`Qual foi a nota ${contador} do aluno`))
+     totalNotas = totalNotas + professor;
+}
+    const media = totalNotas / notas
     //SAÍDA
-
+document.write(`A media total do alunos ${media.toFixed(2)}`)
 </script>
