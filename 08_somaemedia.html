@@ -6,14 +6,13 @@
     */
 
     //ENTRADA
-    let total = 5;
-    let numeros = 0;
-    for (let contador = 1; contador <= 5;) {
-        total = total + numeros;
+    let soma = 0;
+    let media = 0;
+    for (let contador = 1; contador <= 5; contador++) {
+        soma = soma + Number(prompt(`Informe o número ${contador} de 5:`));
     }
-    //PROCESSAMENTO
 
-    const media = total / numeros
-    //SAÍDA
-    document.write(`A media total  ${media.toFixed(2)}`)
+    media = soma / 5;
+
+    document.write(`A soma é ${soma}, e a média é ${media.toFixed(2)}!`);
 </script>
